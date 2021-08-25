@@ -8,7 +8,7 @@ Firstly, find the bond-orientational order parameter Psi6.
   
 Next, find the grains using a cluster algorithm.
   Goes particle by particle, checks if crystalline (|psi6| > 0.7), has 3 neighbours of close orientation.
-  Gives lists of particles and neighbours that are part of the same grain, overlapping lists are joined to createa  list of the paritcles in a grain.
+  Gives lists of particles and neighbours that are part of the same grain, overlapping lists are joined to create a list of the paritcles in a grain.
   Returns same as Psi6, with extra column in which each particle is labelled with their grain number.
   N.B. Each grain number is regnerated per frame, so no correlation across frames (you can track centre-of-masses with Crocker and Grier although not perfect).
 
